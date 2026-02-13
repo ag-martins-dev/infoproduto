@@ -5,27 +5,27 @@ type PlanFeature = {
 
 export const planFeatures: PlanFeature[] = [
   {
-    id: Math.floor(Math.random() * 1024),
+    id: 1,
     feature: "4 fichas de treino por shape (A/B/C)",
   },
   {
-    id: Math.floor(Math.random() * 1024),
+    id: 2,
     feature: "Exercícios com séries e repetições",
   },
   {
-    id: Math.floor(Math.random() * 1024),
+    id: 3,
     feature: "Foco no shape sem negligenciar o resto",
   },
   {
-    id: Math.floor(Math.random() * 1024),
+    id: 4,
     feature: "PDF leve (abre no celular)",
   },
   {
-    id: Math.floor(Math.random() * 1024),
+    id: 5,
     feature: "Acesso imediato",
   },
   {
-    id: Math.floor(Math.random() * 1024),
+    id: 6,
     feature: "Garantia de 7 dias",
   },
 ];

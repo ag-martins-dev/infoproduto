@@ -15,25 +15,25 @@ type Benefit = {
 
 export const benefits: Benefit[] = [
   {
-    id: Math.floor(Math.random() * 1024),
+    id: 1,
     title: "4 fichas de treino por shape (A/B/C)",
     subtitle: "Organização completa para sua semana",
     icon: FileTextIcon,
   },
   {
-    id: Math.floor(Math.random() * 1024),
+    id: 2,
     title: "Exercícios com séries e repetições",
     subtitle: "Tudo pronto para seguir na academia",
     icon: DumbbellIcon,
   },
   {
-    id: Math.floor(Math.random() * 1024),
+    id: 3,
     title: "Treino com foco no shape",
     subtitle: "Sem negligenciar o resto do corpo",
     icon: GoalIcon,
   },
   {
-    id: Math.floor(Math.random() * 1024),
+    id: 4,
     title: "PDF leve",
     subtitle: "Abre instanteneamente no celular",
     icon: SmartphoneIcon,

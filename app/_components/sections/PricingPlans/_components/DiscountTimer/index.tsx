@@ -3,38 +3,45 @@
 import { useEffect, useState } from "react";
 
 import { TWENTY_HOURS_AHEAD } from "@/app/_constants/twenty-hours-ahead";
-import { padNumber } from "@/app/_utils/pad-number";
+
+import { TimeUnit } from "../TimeUnit";
+
+type Time = {
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
 
 export const DiscountTimer = () => {
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
+  const [time, setTime] = useState<Time>({ hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
     const deadline = TWENTY_HOURS_AHEAD;
+    let intervalId: ReturnType<typeof setInterval>;
 
     const updateTimer = () => {
       const hoursDifference = deadline - Date.now();
 
       if (hoursDifference <= 0) {
-        setHours(0);
-        setMinutes(0);
-        setSeconds(0);
+        setTime({ hours: 0, minutes: 0, seconds: 0 });
         return;
       }
 
       const totalSeconds = Math.max(0, Math.floor(hoursDifference / 1000));
 
-      setHours(Math.floor(totalSeconds / 3600));
-      setMinutes(Math.floor((totalSeconds % 3600) / 60));
-      setSeconds(totalSeconds % 60);
+      setTime({
+        hours: Math.floor(totalSeconds / 3600),
+        minutes: Math.floor((totalSeconds % 3600) / 60),
+        seconds: totalSeconds % 60,
+      });
+
+      const delay = 100 - (Date.now() % 1000);
+      intervalId = setInterval(updateTimer, delay);
     };
 
     updateTimer();
 
-    const timerInterval = setInterval(updateTimer, 1000);
-
-    return () => clearInterval(timerInterval);
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
@@ -45,27 +52,21 @@ export const DiscountTimer = () => {
 
       <div className="mx-auto grid w-11/12 grid-cols-3 gap-4">
         <div className="flex flex-col items-center justify-center rounded-xl bg-white p-5">
-          <span className="text-4xl font-bold text-zinc-900">
-            {padNumber(hours)}
-          </span>
+          <TimeUnit time={time.hours} />
           <span className="text-xs/relaxed font-medium text-zinc-500 uppercase">
             Horas
           </span>
         </div>
 
         <div className="flex flex-col items-center justify-center rounded-xl bg-white p-5">
-          <span className="text-4xl font-bold text-zinc-900">
-            {padNumber(minutes)}
-          </span>
+          <TimeUnit time={time.minutes} />
           <span className="text-xs/relaxed font-medium text-zinc-500 uppercase">
             Min
           </span>
         </div>
 
         <div className="flex flex-col items-center justify-center rounded-xl bg-white p-5">
-          <span className="text-4xl font-bold text-zinc-900">
-            {padNumber(seconds)}
-          </span>
+          <TimeUnit time={time.seconds} />
           <span className="text-xs/relaxed font-medium text-zinc-500 uppercase">
             Seg
           </span>
