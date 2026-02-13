@@ -133,6 +133,10 @@ export const PricingPlansSection = () => {
           Comprar agora
         </Button>
       </div>
+
+      <p className="text-center text-xs text-slate-500">
+        Material educativo. Não substitui acompanhamento profissional.
+      </p>
     </section>
   );
 };

@@ -25,7 +25,7 @@ export const Button = ({
     return cloneElement(child, {
       className: twMerge(
         clsx([
-          "cursor-pointer rounded-2xl bg-green-500 px-6 py-3 text-lg font-bold uppercase shadow-lg shadow-green-500/45 transition-all hover:scale-102 hover:brightness-105",
+          "cursor-pointer outline-none rounded-2xl bg-green-500 px-6 py-3 text-lg font-semibold uppercase shadow-lg shadow-green-500/45 transition-all hover:scale-102 hover:brightness-105",
           className,
           child.props.className,
         ]),
@@ -39,7 +39,7 @@ export const Button = ({
       id={props.id}
       className={twMerge(
         clsx([
-          "cursor-pointer rounded-2xl bg-green-500 px-6 py-3 text-lg font-bold uppercase shadow-lg shadow-green-500/45 transition-all hover:scale-102 hover:brightness-105",
+          "cursor-pointer rounded-2xl bg-green-500 px-6 py-3 text-lg font-semibold uppercase shadow-lg shadow-green-500/45 transition-all outline-none hover:scale-102 hover:brightness-105",
           className,
         ]),
       )}

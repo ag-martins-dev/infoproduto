@@ -21,7 +21,7 @@ export default function HomePage() {
             <span className="text-rose-500">corpo que quer?</span>
           </h1>
 
-          <p className="text-center text-lg text-slate-700">
+          <p className="text-center text-lg leading-[150%] text-slate-500">
             Escolha o shape e siga o treino certo para o seu objetivo. Simples,
             direto e pronto pra usar na academia.
           </p>
@@ -109,6 +109,12 @@ export default function HomePage() {
         {/* Timer */}
         <PricingPlansSection />
       </main>
+
+      <footer className="bg-slate-50 px-5 py-8">
+        <p className="text-center text-sm text-slate-900">
+          © 2026 Shape Ideal. Todos os direitos reservados.
+        </p>
+      </footer>
     </div>
   );
 }
