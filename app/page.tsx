@@ -16,17 +16,17 @@ export default function HomePage() {
       <main>
         {/* Hero/Apresentação */}
         <section className="flex flex-col items-center justify-center gap-8 bg-slate-100 px-5 py-20">
-          <h1 className="text-center text-4xl leading-11 font-black text-slate-900">
+          <h1 className="text-center text-4xl leading-11 font-black text-slate-900 md:w-5/12 md:text-6xl md:leading-16">
             Você treina... mas não chega no{" "}
             <span className="text-rose-500">corpo que quer?</span>
           </h1>
 
-          <p className="text-center text-lg leading-[150%] text-slate-500">
+          <p className="text-center text-lg leading-[150%] text-slate-500 md:w-2/6 md:text-base">
             Escolha o shape e siga o treino certo para o seu objetivo. Simples,
             direto e pronto pra usar na academia.
           </p>
 
-          <Button asChild>
+          <Button className="text-base" asChild>
             <Link href={`#${CTA_ID}`} prefetch>
               Quero começar agora
             </Link>
@@ -35,11 +35,12 @@ export default function HomePage() {
 
         {/* Visual Proof/Prova visual */}
         <section className="flex flex-col items-center justify-center bg-white px-5 py-20 md:gap-12">
-          <h2 className="text-center text-3xl leading-11 font-black text-slate-900">
-            O corpo muda quando o treino tem direção.
+          <h2 className="text-center text-3xl leading-11 font-black text-slate-900 md:w-2/6 md:text-4xl md:leading-12">
+            O corpo muda quando o treino tem{" "}
+            <span className="text-rose-500">direção.</span>
           </h2>
 
-          <div className="relative h-60 w-full">
+          <div className="relative h-60 w-full md:h-96">
             <Image
               src={"/shapes.png"}
               sizes="100vw"
@@ -54,12 +55,12 @@ export default function HomePage() {
 
         {/* What you get/O que você recebe */}
         <section className="flex flex-col items-center justify-center gap-14 bg-slate-900 px-5 py-20">
-          <h2 className="text-center text-3xl leading-11 font-black text-white">
-            O que você recebe:
+          <h2 className="text-center text-3xl leading-11 font-black text-white md:text-4xl md:leading-12">
+            O que você receberá
           </h2>
 
           {/* Benefits/Benefícios */}
-          <div className="space-y-14">
+          <div className="space-y-14 md:grid md:grid-cols-2 md:gap-14 md:space-y-0">
             <div className="flex w-full flex-col items-center justify-center gap-4">
               <FileText className="size-12 text-rose-500" />
 
