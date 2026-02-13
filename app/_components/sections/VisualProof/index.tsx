@@ -11,7 +11,7 @@ export const VisualProofSection = () => {
       <div className="relative h-60 w-full md:h-96">
         <Image
           sizes="100vw"
-          src={"/shapes.png"}
+          src={"/shapes.avif"}
           alt="Mulheres musculosas ilustrando resultados da planilha."
           className="object-contain"
           fill
