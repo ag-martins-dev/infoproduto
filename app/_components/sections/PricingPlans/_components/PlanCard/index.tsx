@@ -18,13 +18,13 @@ export const PlanCard = () => {
             {numberToBrl(47)}
           </s>
           <b className="text-6xl/tight font-bold text-emerald-500 md:text-7xl/tight">
-            {numberToBrl(10)}
+            {numberToBrl(14.99)}
           </b>
           <p className="text-sm/relaxed text-zinc-900/60 md:text-base/relaxed">
             pagamento único.
           </p>
           <b className="text-sm/relaxed text-emerald-500 md:text-base">
-            Você economiza {numberToBrl(37)}!
+            Você economiza {numberToBrl(47 - 15)}!
           </b>
         </div>
       </div>
