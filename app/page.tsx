@@ -7,7 +7,7 @@ import { WhatYouGetSection } from "./_components/sections/WhatYouGet";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen w-full bg-white">
+    <>
       <Header />
 
       <main>
@@ -18,6 +18,6 @@ export default function HomePage() {
       </main>
 
       <Footer />
-    </div>
+    </>
   );
 }
