@@ -3,7 +3,10 @@
 import { Check } from "lucide-react";
 import { useEffect, useState } from "react";
 
+import { CTA_ID } from "@/app/_constants/cta-buy-now-id";
 import { TWENTY_HOURS_AHEAD } from "@/app/_constants/twenty-hours-ahead";
+
+import { Button } from "../common/Button";
 
 export const PricingPlansSection = () => {
   const [hours, setHours] = useState(0);
@@ -126,12 +129,9 @@ export const PricingPlansSection = () => {
           </li>
         </ul>
 
-        <button
-          id="cta"
-          className="w-full cursor-pointer rounded-2xl bg-green-500 px-6 py-3 text-lg font-bold uppercase shadow-lg shadow-green-500/45 transition-all hover:scale-102 hover:brightness-105"
-        >
+        <Button id={CTA_ID} className="w-full">
           Comprar agora
-        </button>
+        </Button>
       </div>
     </section>
   );

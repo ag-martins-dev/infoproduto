@@ -1,7 +1,10 @@
 import { Dumbbell, FileText, Goal, Smartphone } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
+import { Button } from "./_components/common/Button";
 import { PricingPlansSection } from "./_components/PricingPlans";
+import { CTA_ID } from "./_constants/cta-buy-now-id";
 
 export default function HomePage() {
   return (
@@ -26,12 +29,11 @@ export default function HomePage() {
             direto e pronto pra usar na academia.
           </p>
 
-          <a
-            href="#cta"
-            className="cursor-pointer rounded-2xl bg-green-500 px-6 py-3 text-lg font-bold uppercase shadow-lg shadow-green-500/45 transition-all hover:scale-102 hover:brightness-105"
-          >
-            Quero começar agora
-          </a>
+          <Button asChild>
+            <Link href={`#${CTA_ID}`} prefetch>
+              Quero começar agora
+            </Link>
+          </Button>
         </section>
 
         {/* Visual Proof/Prova visual */}
