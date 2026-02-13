@@ -7,21 +7,23 @@ import { numberToBrl } from "@/app/_utils/number-to-brl";
 
 export const PlanCard = () => {
   return (
-    <div className="flex w-full flex-col items-center justify-center gap-8 rounded-3xl border border-slate-300 bg-white p-5 shadow-xl shadow-slate-300/40 md:w-2/3 lg:w-2/6">
-      <h4 className="text-center text-2xl font-black text-slate-900 md:text-3xl">
+    <div className="flex w-full flex-col items-center justify-center gap-8 rounded-2xl bg-white p-10 shadow-xl ring shadow-zinc-300/60 ring-zinc-300/50 md:w-2/3 lg:w-2/6">
+      <h4 className="text-center text-2xl/tight font-bold text-zinc-900 md:text-3xl/tight">
         Acesso completo
       </h4>
 
       <div>
         <div className="flex flex-col items-center justify-center gap-1">
-          <s className="text-slate-500">{numberToBrl(47)}</s>
-          <b className="text-6xl font-black text-green-500 md:text-7xl">
+          <s className="text-base/relaxed text-zinc-900/60">
+            {numberToBrl(47)}
+          </s>
+          <b className="text-6xl/tight font-bold text-emerald-500 md:text-7xl/tight">
             {numberToBrl(10)}
           </b>
-          <p className="text-sm text-slate-500 md:text-base">
+          <p className="text-sm/relaxed text-zinc-900/60 md:text-base/relaxed">
             pagamento único.
           </p>
-          <b className="text-sm text-green-500 md:text-base">
+          <b className="text-sm/relaxed text-emerald-500 md:text-base">
             Você economiza {numberToBrl(37)}!
           </b>
         </div>
@@ -29,12 +31,11 @@ export const PlanCard = () => {
 
       <ul className="space-y-5">
         {planFeatures.map(({ id, feature }) => (
-          <li
-            key={id}
-            className="flex items-center gap-2 text-slate-500 md:text-lg"
-          >
-            <Check className="size-4 text-green-500" />
-            <span>{feature}</span>
+          <li key={id} className="flex items-center gap-2">
+            <Check className="size-5 text-emerald-500" />
+            <span className="text-base/relaxed text-zinc-900/60 md:text-lg/relaxed">
+              {feature}
+            </span>
           </li>
         ))}
       </ul>

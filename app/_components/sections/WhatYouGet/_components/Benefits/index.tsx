@@ -8,11 +8,13 @@ export const Benefits = () => {
           key={id}
           className="flex w-full flex-col items-center justify-center gap-4"
         >
-          <Icon className="size-12 text-rose-500" />
+          <Icon className="size-14 text-rose-500" />
 
-          <div className="flex w-full flex-col items-center justify-center gap-0.5">
-            <b className="text-center text-lg">{title}</b>
-            <p className="text-center">{subtitle}</p>
+          <div className="flex w-full flex-col items-center justify-center gap-1">
+            <b className="text-center text-lg/tight">{title}</b>
+            <p className="text-center text-sm/relaxed text-white/60">
+              {subtitle}
+            </p>
           </div>
         </div>
       ))}
