@@ -26,7 +26,7 @@ export const PricingPlansSection = () => {
         return;
       }
 
-      const totalSeconds = Math.floor(diff / 1000);
+      const totalSeconds = Math.max(0, Math.floor(diff / 1000));
 
       setHours(Math.floor(totalSeconds / 3600));
       setMinutes(Math.floor((totalSeconds % 3600) / 60));
