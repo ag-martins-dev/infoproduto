@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 import { CTA_ID } from "@/app/_constants/cta-buy-now-id";
 import { TWENTY_HOURS_AHEAD } from "@/app/_constants/twenty-hours-ahead";
+import { numberToBrl } from "@/app/_utils/number-to-brl";
 
 import { Button } from "../common/Button";
 
@@ -45,7 +46,7 @@ export const PricingPlansSection = () => {
 
   return (
     <section className="flex flex-col items-center justify-center gap-8 bg-slate-100 px-5 py-20">
-      <div className="flex w-full flex-col items-center justify-center gap-4 rounded-3xl bg-rose-500 p-6 shadow-lg shadow-rose-500/40 md:w-2/6">
+      <div className="flex w-full flex-col items-center justify-center gap-4 rounded-3xl bg-rose-500 p-6 shadow-lg shadow-rose-500/40 md:w-3/5 lg:w-2/6">
         <strong className="text-center text-xl font-black md:text-2xl">
           ⏰ Oferta especial expira em:
         </strong>
@@ -84,26 +85,22 @@ export const PricingPlansSection = () => {
         Guia de shapes femininos
       </h3>
 
-      <div className="flex w-full flex-col items-center justify-center gap-8 rounded-3xl border border-slate-300 bg-white p-5 shadow-xl shadow-slate-300/40 md:w-2/6">
+      <div className="flex w-full flex-col items-center justify-center gap-8 rounded-3xl border border-slate-300 bg-white p-5 shadow-xl shadow-slate-300/40 md:w-2/3 lg:w-2/6">
         <h4 className="text-center text-2xl font-black text-slate-900 md:text-3xl">
           Acesso completo
         </h4>
 
         <div>
           <div className="flex flex-col items-center justify-center gap-1">
-            <s className="text-slate-500">R$47,00</s>
+            <s className="text-slate-500">{numberToBrl(47)}</s>
             <b className="text-6xl font-black text-green-500 md:text-7xl">
-              R$10,00
+              {numberToBrl(10)}
             </b>
             <p className="text-sm text-slate-500 md:text-base">
               pagamento único.
             </p>
             <b className="text-sm text-green-500 md:text-base">
-              Você economiza{" "}
-              {new Intl.NumberFormat("pt-BR", {
-                style: "currency",
-                currency: "BRL",
-              }).format(47 - 10)}
+              Você economiza {numberToBrl(37)}!
             </b>
           </div>
         </div>
@@ -138,7 +135,7 @@ export const PricingPlansSection = () => {
         </Button>
       </div>
 
-      <p className="text-center text-xs text-slate-500">
+      <p className="text-center text-xs text-slate-500 md:text-base lg:text-sm">
         Material educativo. Não substitui acompanhamento profissional.
       </p>
     </section>
