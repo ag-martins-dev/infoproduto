@@ -3,18 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Button } from "./_components/common/Button";
+import { Header } from "./_components/Header";
 import { PricingPlansSection } from "./_components/PricingPlans";
 import { CTA_ID } from "./_constants/cta-buy-now-id";
 
 export default function HomePage() {
   return (
-    <div className="h-screen w-full bg-white">
+    <div className="min-h-screen w-full bg-white">
       {/* Header */}
-      <header className="z-99 flex h-11 w-full items-center justify-center bg-slate-900">
-        <p className="text-center font-bold uppercase">
-          Oferta de lançamento - Acesso imediato
-        </p>
-      </header>
+      <Header />
 
       <main>
         {/* Hero/Apresentação */}
