@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Shape Ideal - Transforme seu corpo",
     description: "Transforme seu corpo através da nossa planilha!",
     url: "https://guiadeshapesfemininos.com",
-    images: [{ url: "" }],
+    images: [{ url: "https://guiadeshapesfemininos.com/shapes-banner.avif" }],
   },
   robots: {
     index: true,
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shape Ideal - Transforme seu corpo",
     description: "Transforme seu corpo através da nossa planilha!",
-    images: [""],
+    images: ["https://guiadeshapesfemininos.com/shapes-banner.avif"],
   },
   alternates: {
     canonical: "https://guiadeshapesfemininos.com",
