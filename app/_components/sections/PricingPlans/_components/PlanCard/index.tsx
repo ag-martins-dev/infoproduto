@@ -40,8 +40,14 @@ export const PlanCard = () => {
         ))}
       </ul>
 
-      <Button id={CTA_ID} className="w-full">
-        Comprar agora
+      <Button id={CTA_ID} className="w-full" asChild>
+        <a
+          href="https://checkout.guiadeshapesfemininos.com/VCCL1O8SCSG9"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Comprar agora
+        </a>
       </Button>
     </div>
   );

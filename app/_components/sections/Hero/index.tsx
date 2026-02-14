@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { CTA_ID } from "@/app/_constants/cta-buy-now-id";
 
 import { Button } from "../../common/Button";
@@ -18,7 +16,7 @@ export const HeroSection = () => {
       </p>
 
       <Button asChild>
-        <Link href={`#${CTA_ID}`}>Quero começar agora</Link>
+        <a href={`#${CTA_ID}`}>Quero começar agora</a>
       </Button>
     </section>
   );
