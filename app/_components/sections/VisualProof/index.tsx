@@ -14,6 +14,7 @@ export const VisualProofSection = () => {
           src={"/shapes.avif"}
           alt="Mulheres musculosas ilustrando resultados da planilha."
           className="object-contain"
+          loading="lazy"
           fill
         />
       </div>

@@ -12,7 +12,7 @@ type Time = {
   seconds: number;
 };
 
-export const DiscountTimer = () => {
+const DiscountTimer = () => {
   const [time, setTime] = useState<Time>({ hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
@@ -75,3 +75,5 @@ export const DiscountTimer = () => {
     </div>
   );
 };
+
+export default DiscountTimer;

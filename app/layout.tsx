@@ -13,23 +13,38 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Shape Ideal - Transforme seu Corpo",
   description: "Transforme seu corpo através da nossa planilha!",
-  keywords: ["shape", "corpo", "planilha", "treino", "transformação"],
+  keywords: [
+    "shape feminino",
+    "corpo feminino",
+    "planilha de treino feminina",
+    "treino feminino",
+    "transformação",
+    "transforme seu corpo",
+    "ficha de treino para mulheres",
+  ],
   openGraph: {
     type: "website",
-    siteName: "Shape Ideal",
-    title: "Shape Ideal - Transforme seu corpo!",
+    title: "Shape Ideal - Transforme seu corpo",
+    description: "Transforme seu corpo através da nossa planilha!",
+    url: "https://guiadeshapesfemininos.com",
+    images: [{ url: "" }],
   },
   robots: {
     index: true,
-    notranslate: true,
+    follow: true,
     googleBot: {
       index: true,
-      notranslate: true,
+      follow: true,
     },
   },
-  appleWebApp: {
-    title: "Shape Ideal - Transforme seu corpo!",
-    statusBarStyle: "black-translucent",
+  twitter: {
+    card: "summary_large_image",
+    title: "Shape Ideal - Transforme seu corpo",
+    description: "Transforme seu corpo através da nossa planilha!",
+    images: [""],
+  },
+  alternates: {
+    canonical: "https://guiadeshapesfemininos.com",
   },
 };
 

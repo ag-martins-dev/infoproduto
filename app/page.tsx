@@ -5,6 +5,8 @@ import { PricingPlansSection } from "./_components/sections/PricingPlans";
 import { VisualProofSection } from "./_components/sections/VisualProof";
 import { WhatYouGetSection } from "./_components/sections/WhatYouGet";
 
+export const dynamic = "force-static";
+
 export default function HomePage() {
   return (
     <>

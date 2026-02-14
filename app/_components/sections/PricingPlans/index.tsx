@@ -1,4 +1,4 @@
-import { DiscountTimer } from "./_components/DiscountTimer";
+import DiscountTimer from "./_components/DiscountTimer/client";
 import { PlanCard } from "./_components/PlanCard";
 
 export const PricingPlansSection = () => {
