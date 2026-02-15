@@ -1,6 +1,7 @@
 import { CTA_ID } from "@/app/_constants/cta-buy-now-id";
 
 import { Button } from "../../common/Button";
+import { CausesToBuy } from "./_components/CausesToBuy";
 
 export const HeroSection = () => {
   return (
@@ -18,6 +19,14 @@ export const HeroSection = () => {
       <Button asChild>
         <a href={`#${CTA_ID}`}>Quero começar agora</a>
       </Button>
+
+      <div className="mt-5 flex w-full flex-col items-center justify-center gap-8 md:w-5/12">
+        <h2 className="text-center text-3xl/tight font-bold text-zinc-900 md:text-4xl/tight">
+          Para quem é esse guia
+        </h2>
+
+        <CausesToBuy />
+      </div>
     </section>
   );
 };
