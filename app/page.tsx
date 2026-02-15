@@ -1,5 +1,6 @@
 import { Footer } from "./_components/Footer";
 import { Header } from "./_components/Header";
+import { CausesToBuySection } from "./_components/sections/CausesToBuy";
 import { FrequentlyAskedQuestionsSection } from "./_components/sections/FrequentlyAskedQuestions";
 import { HeroSection } from "./_components/sections/Hero";
 import { PricingPlansSection } from "./_components/sections/PricingPlans";
@@ -16,6 +17,7 @@ export default function HomePage() {
 
       <main>
         <HeroSection />
+        <CausesToBuySection />
         <VisualProofSection />
         <WhatYouGetSection />
         <TestimonialsSection />

@@ -4,10 +4,10 @@ import { CauseCard } from "../CauseCard";
 
 export const CausesToBuy = () => {
   return (
-    <div className="flex w-full flex-col items-center gap-3">
+    <ul className="flex w-full flex-col items-center gap-4 md:w-5/12">
       {causesToBuy.map((cause, index) => (
         <CauseCard key={index} cause={cause} />
       ))}
-    </div>
+    </ul>
   );
 };
