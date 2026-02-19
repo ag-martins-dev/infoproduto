@@ -15,7 +15,9 @@ export const TestimonalCard = ({ testimonial }: TestimonialCardProps) => {
         <div className="flex size-10 items-center justify-center rounded-full bg-zinc-300 text-lg font-bold text-white">
           {authorFirstLetterAvatar}
         </div>
-        <p className="text-lg/tight font-semibold text-zinc-900">Marina S.</p>
+        <p className="text-lg/tight font-semibold text-zinc-900">
+          {testimonial.author}
+        </p>
       </div>
 
       <q className="text-base/relaxed text-zinc-900/60">
