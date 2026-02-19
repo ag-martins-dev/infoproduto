@@ -21,13 +21,14 @@ export const metadata: Metadata = {
     "transformação",
     "transforme seu corpo",
     "ficha de treino para mulheres",
+    "guia de shapes femininos",
   ],
   openGraph: {
     type: "website",
     title: "Shape Ideal - Transforme seu corpo",
     description: "Transforme seu corpo através da nossa planilha!",
-    url: "https://guiadeshapesfemininos.com",
-    images: [{ url: "https://guiadeshapesfemininos.com/shapes-banner.avif" }],
+    url: `${process.env.BASE_URL}`,
+    images: [{ url: `${process.env.BASE_URL}/shapes-banner.avif` }],
   },
   robots: {
     index: true,
@@ -41,10 +42,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shape Ideal - Transforme seu corpo",
     description: "Transforme seu corpo através da nossa planilha!",
-    images: ["https://guiadeshapesfemininos.com/shapes-banner.avif"],
+    images: [`${process.env.BASE_URL}/shapes-banner.avif`],
   },
   alternates: {
-    canonical: "https://guiadeshapesfemininos.com",
+    canonical: `${process.env.BASE_URL}`,
   },
 };
 
