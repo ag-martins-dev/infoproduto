@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     type: "website",
     title: "Shape Ideal - Transforme seu corpo",
     description: "Transforme seu corpo através da nossa planilha!",
-    url: `${process.env.BASE_URL}`,
+    url: "https://www.guiadeshapesfemininos.com",
     images: [
       {
-        url: `${process.env.BASE_URL}/shapes-banner.png`,
+        url: "https://guiadeshapesfemininos.com/shapes-banner.png",
         width: "1200px",
         height: "630px",
         type: "image/png",
@@ -49,10 +49,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shape Ideal - Transforme seu corpo",
     description: "Transforme seu corpo através da nossa planilha!",
-    images: [`${process.env.BASE_URL}/shapes-banner.png`],
+    images: ["https://guiadeshapesfemininos.com/shapes-banner.png"],
   },
   alternates: {
-    canonical: `${process.env.BASE_URL}`,
+    canonical: "https://www.guiadeshapesfemininos.com",
   },
 };
 
