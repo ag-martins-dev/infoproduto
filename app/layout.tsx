@@ -28,7 +28,14 @@ export const metadata: Metadata = {
     title: "Shape Ideal - Transforme seu corpo",
     description: "Transforme seu corpo através da nossa planilha!",
     url: `${process.env.BASE_URL}`,
-    images: [{ url: `${process.env.BASE_URL}/shapes-banner.avif` }],
+    images: [
+      {
+        url: `${process.env.BASE_URL}/shapes-banner.png`,
+        width: "1200px",
+        height: "630px",
+        type: "image/png",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -42,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shape Ideal - Transforme seu corpo",
     description: "Transforme seu corpo através da nossa planilha!",
-    images: [`${process.env.BASE_URL}/shapes-banner.avif`],
+    images: [`${process.env.BASE_URL}/shapes-banner.png`],
   },
   alternates: {
     canonical: `${process.env.BASE_URL}`,
