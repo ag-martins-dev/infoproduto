@@ -4,9 +4,9 @@ import { CauseCard } from "../CauseCard";
 
 export const CausesToBuy = () => {
   return (
-    <ul className="flex w-full flex-col items-center gap-5 md:w-5/12">
-      {causesToBuy.map((cause, index) => (
-        <CauseCard key={index} cause={cause} />
+    <ul className="grid w-full grid-cols-1 gap-4 md:w-9/12 md:grid-cols-2">
+      {causesToBuy.map((cause) => (
+        <CauseCard key={cause.id} cause={cause} />
       ))}
     </ul>
   );

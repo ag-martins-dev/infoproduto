@@ -5,8 +5,8 @@ import { Accordion } from "./_components/Accordion";
 export const FAQSection = () => {
   return (
     <section className="flex w-full flex-col items-center justify-center gap-8 bg-linear-to-b from-white to-zinc-100 px-5 pt-20 pb-10">
-      <h3 className="text-center text-3xl/tight font-bold text-zinc-900">
-        Perguntas frequentes
+      <h3 className="text-center text-4xl/tight font-bold text-zinc-900">
+        Perguntas <span className="font-black text-rose-500">frequentes</span>
       </h3>
 
       <div className="flex w-full flex-col items-center justify-center gap-3">
@@ -17,10 +17,6 @@ export const FAQSection = () => {
           );
         })}
       </div>
-
-      <p className="text-center text-xs/relaxed text-zinc-500 md:text-base/relaxed lg:text-sm/relaxed">
-        Material educativo. Não substitui acompanhamento profissional.
-      </p>
     </section>
   );
 };

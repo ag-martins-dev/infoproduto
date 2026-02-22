@@ -24,8 +24,4 @@ export const planFeatures: PlanFeature[] = [
     id: 5,
     feature: "Acesso imediato",
   },
-  {
-    id: 6,
-    feature: "Garantia de 7 dias",
-  },
 ];

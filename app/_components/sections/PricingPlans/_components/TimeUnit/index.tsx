@@ -8,7 +8,7 @@ type TimeUnitProps = {
 
 export const TimeUnit = memo(({ time }: TimeUnitProps) => {
   return (
-    <span className="text-4xl font-bold text-zinc-900">{padNumber(time)}</span>
+    <span className="text-4xl font-black text-white">{padNumber(time)}</span>
   );
 });
 TimeUnit.displayName = "TimeUnit";
