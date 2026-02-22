@@ -9,10 +9,9 @@ export const Benefits = () => {
           className="flex w-full flex-col items-center justify-center gap-4"
         >
           <Icon className="size-14 text-rose-500" />
-
-          <div className="flex w-full flex-col items-center justify-center gap-1">
-            <b className="text-center text-lg/tight">{title}</b>
-            <p className="text-center text-sm/relaxed text-white/60">
+          <div className="flex w-full flex-col items-center justify-center gap-2">
+            <b className="text-center text-lg/tight text-white">{title}</b>
+            <p className="text-center text-sm/relaxed text-zinc-400">
               {subtitle}
             </p>
           </div>
