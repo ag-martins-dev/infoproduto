@@ -10,7 +10,7 @@ const NotFoundPage = () => {
       </h1>
 
       <div className="flex flex-col items-center justify-center gap-4">
-        <p className="text-center text-base/relaxed font-medium text-zinc-900/60 lg:w-2/3">
+        <p className="text-center text-base/relaxed font-medium text-zinc-500 lg:w-2/3">
           A página que você está tentando acessar não existe, clique no botão
           abaixo para voltar para a página inicial.
         </p>

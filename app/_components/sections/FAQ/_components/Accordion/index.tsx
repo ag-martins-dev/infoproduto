@@ -30,7 +30,7 @@ export const Accordion = ({ faq, defaultOpened }: AccordionProps) => {
         </p>
         <ChevronDown
           className={clsx(
-            "size-6 text-zinc-900 transition-transform duration-200 ease-in-out",
+            "size-6 text-zinc-900 transition-all ease-in-out",
             isCollapsed && "rotate-180",
           )}
         />

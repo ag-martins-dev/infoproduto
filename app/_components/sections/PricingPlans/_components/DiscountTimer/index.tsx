@@ -45,27 +45,27 @@ const DiscountTimer = () => {
   }, []);
 
   return (
-    <div className="flex w-full flex-col items-center justify-center gap-5 rounded-2xl bg-rose-500 p-8 shadow-lg ring-2 shadow-rose-500/40 ring-rose-300/50 md:w-3/5 lg:w-2/6">
+    <div className="flex w-full flex-col items-center justify-center gap-5 rounded-3xl bg-linear-to-b from-rose-400 to-rose-500 p-8 shadow-lg ring-2 shadow-rose-400/70 ring-rose-400 md:w-3/5 lg:w-2/6">
       <strong className="text-center text-xl/tight font-bold md:text-2xl/tight">
         ⏰ Oferta especial expira em:
       </strong>
 
       <div className="mx-auto grid w-11/12 grid-cols-3 gap-4">
-        <div className="flex flex-col items-center justify-center rounded-xl bg-white p-5">
+        <div className="flex flex-col items-center justify-center rounded-2xl bg-white p-5 shadow-md">
           <TimeUnit time={time.hours} />
           <span className="text-xs/relaxed font-medium text-zinc-500 uppercase">
             Horas
           </span>
         </div>
 
-        <div className="flex flex-col items-center justify-center rounded-xl bg-white p-5">
+        <div className="flex flex-col items-center justify-center rounded-2xl bg-white p-5 shadow-md">
           <TimeUnit time={time.minutes} />
           <span className="text-xs/relaxed font-medium text-zinc-500 uppercase">
             Min
           </span>
         </div>
 
-        <div className="flex flex-col items-center justify-center rounded-xl bg-white p-5">
+        <div className="flex flex-col items-center justify-center rounded-2xl bg-white p-5 shadow-md">
           <TimeUnit time={time.seconds} />
           <span className="text-xs/relaxed font-medium text-zinc-500 uppercase">
             Seg

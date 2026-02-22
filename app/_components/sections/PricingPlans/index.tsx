@@ -11,10 +11,6 @@ export const PricingPlansSection = () => {
       </h3>
 
       <PlanCard />
-
-      <p className="text-center text-xs/relaxed text-zinc-900/60 md:text-base/relaxed lg:text-sm/relaxed">
-        Material educativo. Não substitui acompanhamento profissional.
-      </p>
     </section>
   );
 };

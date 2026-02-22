@@ -10,7 +10,7 @@ export const HeroSection = () => {
         <span className="text-rose-500">corpo que quer?</span>
       </h1>
 
-      <p className="text-center text-lg/relaxed text-zinc-900/60 md:w-4/5 md:text-base lg:w-2/6">
+      <p className="text-center text-lg/relaxed text-zinc-500 md:w-4/5 md:text-base lg:w-2/6">
         Escolha o shape e siga o treino certo para o seu objetivo. Simples,
         direto e pronto pra usar na academia.
       </p>

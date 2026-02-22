@@ -6,7 +6,6 @@ export const CausesToBuySection = () => {
       <h2 className="text-center text-3xl/tight font-bold text-zinc-900 md:text-4xl/tight">
         Para quem é esse guia
       </h2>
-
       <CausesToBuy />
     </section>
   );
