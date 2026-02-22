@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { Button } from "./_components/common/Button";
 
 const NotFoundPage = () => {
@@ -14,10 +12,8 @@ const NotFoundPage = () => {
           A página que você está tentando acessar não existe, clique no botão
           abaixo para voltar para a página inicial.
         </p>
-        <Button className="text-base" asChild>
-          <Link href="/" prefetch>
-            Voltar para o início
-          </Link>
+        <Button href="/" className="text-base">
+          Voltar para o início
         </Button>
       </div>
     </main>
