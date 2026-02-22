@@ -4,6 +4,9 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
 
+import { UtmifyPixel } from "./_components/utmify/Pixel";
+import { UtmifyScript } from "./_components/utmify/Script";
+
 const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
@@ -65,6 +68,9 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={`${poppins.className} min-h-screen antialiased`}>
         {children}
+
+        <UtmifyScript />
+        <UtmifyPixel />
       </body>
     </html>
   );
