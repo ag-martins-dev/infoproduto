@@ -1,7 +1,7 @@
 import { Footer } from "./_components/Footer";
 import { Header } from "./_components/Header";
 import { CausesToBuySection } from "./_components/sections/CausesToBuy";
-import { FrequentlyAskedQuestionsSection } from "./_components/sections/FrequentlyAskedQuestions";
+import { FAQSection } from "./_components/sections/FAQ";
 import { HeroSection } from "./_components/sections/Hero";
 import { PricingPlansSection } from "./_components/sections/PricingPlans";
 import { TestimonialsSection } from "./_components/sections/Testimonials";
@@ -22,7 +22,7 @@ export default function HomePage() {
         <WhatYouGetSection />
         <TestimonialsSection />
         <PricingPlansSection />
-        <FrequentlyAskedQuestionsSection />
+        <FAQSection />
       </main>
 
       <Footer />
