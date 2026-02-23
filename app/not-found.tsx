@@ -1,4 +1,4 @@
-import { Button } from "./_components/common/Button";
+import * as Button from "./_components/common/call-to-action-button";
 
 const NotFoundPage = () => {
   return (
@@ -12,9 +12,10 @@ const NotFoundPage = () => {
           A página que você está tentando acessar não existe, clique no botão
           abaixo para voltar para a página inicial.
         </p>
-        <Button href="/" className="text-base">
-          Voltar para o início
-        </Button>
+
+        <Button.Root href="/" className="text-sm/relaxed">
+          <Button.Label text="Voltar para o início" />
+        </Button.Root>
       </div>
     </main>
   );

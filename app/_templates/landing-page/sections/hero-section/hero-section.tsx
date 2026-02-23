@@ -7,7 +7,7 @@ import { SocialProof } from "./components/social-proof";
 
 export function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center gap-8 overflow-hidden bg-zinc-100 px-5 py-20 before:absolute before:top-20 before:left-60 before:z-0 before:block before:size-80 before:rounded-full before:bg-rose-500/15 before:blur-[80px] before:content-[''] after:absolute after:right-60 after:bottom-20 after:z-0 after:block after:size-80 after:rounded-full after:bg-emerald-500/15 after:blur-[80px] after:content-['']">
+    <section className="relative flex flex-col items-center justify-center gap-8 overflow-hidden bg-zinc-100 px-5 py-20 before:absolute before:top-20 before:left-60 before:z-0 before:block before:size-80 before:rounded-full before:bg-rose-500/20 before:blur-[80px] before:content-[''] after:absolute after:right-60 after:bottom-20 after:z-0 after:block after:size-80 after:rounded-full after:bg-emerald-500/20 after:blur-[80px] after:content-['']">
       <div className="flex w-full flex-col items-center justify-center gap-8">
         <h1 className="z-2 text-center text-4xl/tight font-bold text-zinc-900 md:w-4/5 md:text-5xl/tight lg:w-5/12">
           Você treina... mas não chega no{" "}
