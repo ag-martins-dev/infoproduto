@@ -1,6 +1,6 @@
-export const numberToBrl = (rawNumber: number): string => {
+export function convertNumberToBRL(rawNumber: number): string {
   return new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "brl",
   }).format(rawNumber);
-};
+}

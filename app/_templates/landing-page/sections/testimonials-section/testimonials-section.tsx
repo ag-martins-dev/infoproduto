@@ -4,7 +4,7 @@ import { TestimonialCard } from "./components/testimonial-card";
 
 export function TestimonialsSection() {
   return (
-    <section className="relative z-1 flex w-full flex-col items-center justify-center gap-8 overflow-hidden bg-zinc-100 px-5 py-20 before:absolute before:top-40 before:left-10 before:z-0 before:block before:size-120 before:bg-rose-500/20 before:blur-[80px] before:content-[''] after:absolute after:right-10 after:bottom-40 after:z-0 after:block after:size-120 after:bg-emerald-500/20 after:blur-[80px] after:content-['']">
+    <section className="relative z-1 flex w-full flex-col items-center justify-center gap-8 overflow-hidden bg-zinc-100 px-5 py-20 before:absolute before:top-40 before:left-10 before:z-0 before:block before:size-120 before:bg-rose-500/15 before:blur-[80px] before:content-[''] after:absolute after:right-10 after:bottom-40 after:z-0 after:block after:size-120 after:bg-emerald-500/15 after:blur-[80px] after:content-['']">
       <div className="z-1 flex w-full flex-col items-center justify-center gap-2">
         <h2 className="text-center text-3xl/tight font-bold text-zinc-900">
           O que dizem quem já{" "}

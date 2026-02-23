@@ -3,7 +3,7 @@ import { ArrowRight, Check, ShieldCheckIcon } from "lucide-react";
 import { Button as ButtonCTA } from "@/app/_components/common/Button";
 import { getCallToActionKeys } from "@/app/_constants/call-to-action-keys";
 import { planFeatures } from "@/app/_constants/plan-features";
-import { numberToBrl } from "@/app/_utils/number-to-brl";
+import { numberToBrl } from "@/app/_utils/covert-number-to-brl";
 
 export const PlanCard = () => {
   return (
