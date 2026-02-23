@@ -1,7 +1,7 @@
 import { ArrowRight, Check, ShieldCheckIcon } from "lucide-react";
 
 import { Button as ButtonCTA } from "@/app/_components/common/Button";
-import { CTA_ID } from "@/app/_constants/cta-id-href";
+import { getCallToActionKeys } from "@/app/_constants/call-to-action-keys";
 import { planFeatures } from "@/app/_constants/plan-features";
 import { numberToBrl } from "@/app/_utils/number-to-brl";
 
@@ -65,7 +65,7 @@ export const PlanCard = () => {
       </div>
 
       <ButtonCTA
-        id={CTA_ID}
+        id={getCallToActionKeys().id}
         href="https://checkout.guiadeshapesfemininos.com/VCCL1O8SCSG9"
         target="_blank"
         rel="noopener noreferrer"

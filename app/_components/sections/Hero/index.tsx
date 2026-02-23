@@ -1,6 +1,6 @@
 import { ArrowDown } from "lucide-react";
 
-import { CTA_HREF } from "@/app/_constants/cta-id-href";
+import { getCallToActionKeys } from "@/app/_constants/call-to-action-keys";
 
 import { Button } from "../../common/Button";
 
@@ -19,7 +19,10 @@ export const HeroSection = () => {
         </p>
       </div>
 
-      <Button href={CTA_HREF} className="z-2 flex items-center gap-2">
+      <Button
+        href={getCallToActionKeys().href}
+        className="z-2 flex items-center gap-2"
+      >
         Quero começar agora <ArrowDown className="size-5" />
       </Button>
 
