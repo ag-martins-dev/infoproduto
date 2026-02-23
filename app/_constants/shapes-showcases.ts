@@ -8,10 +8,10 @@ export type ShapeShowcase = {
   image: {
     src: string;
     alt: string;
-    relWidth: string;
-    relHeight: string;
+    relWidth: number;
+    relHeight: number;
   };
-  color: "rose-500" | "cyan-500" | "blue-500" | "red-500";
+  color: string;
   tag: {
     label: string;
     description: string;
@@ -24,8 +24,8 @@ export const shapesShowcases: ShapeShowcase[] = [
     image: {
       src: gluteShape,
       alt: "Shape foco em glúteos",
-      relWidth: "50",
-      relHeight: "112",
+      relWidth: 200,
+      relHeight: 448,
     },
     color: "rose-500",
     tag: {
@@ -38,10 +38,10 @@ export const shapesShowcases: ShapeShowcase[] = [
     image: {
       src: slimShape,
       alt: "Shape foco em definição",
-      relWidth: "50",
-      relHeight: "118",
+      relWidth: 200,
+      relHeight: 472,
     },
-    color: "cyan-500",
+    color: "blue-500",
     tag: {
       label: "Slim",
       description: "Foco em definição",
@@ -52,8 +52,8 @@ export const shapesShowcases: ShapeShowcase[] = [
     image: {
       src: legsShape,
       alt: "Shape foco em pernas",
-      relWidth: "50",
-      relHeight: "112",
+      relWidth: 200,
+      relHeight: 448,
     },
     color: "blue-500",
     tag: {
@@ -66,10 +66,10 @@ export const shapesShowcases: ShapeShowcase[] = [
     image: {
       src: fitnessShape,
       alt: "Shape equilibrado",
-      relWidth: "50",
-      relHeight: "112",
+      relWidth: 200,
+      relHeight: 448,
     },
-    color: "red-500",
+    color: "rose-500",
     tag: {
       label: "Equilibrado",
       description: "Foco em performance",

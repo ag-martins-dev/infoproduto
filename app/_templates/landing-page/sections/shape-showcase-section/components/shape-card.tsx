@@ -44,11 +44,17 @@ export function ShapeCard({ shape }: ShapeCardProps) {
       <ShapeCardImage
         src={shape.image.src}
         alt={shape.image.alt}
-        className={`w-${shape.image.relWidth} h-${shape.image.relHeight}`}
+        style={{
+          width: shape.image.relWidth,
+          height: shape.image.relHeight,
+        }}
       />
 
       <div
-        className={`bg-${shape.color} absolute top-1/2 left-1/2 z-0 block size-50 -translate-x-1/2 opacity-0 blur-[80px] transition-all group-hover:-translate-y-1/2 group-hover:opacity-40`}
+        style={{
+          backgroundColor: `var(--color-${shape.color})`,
+        }}
+        className={`absolute top-1/2 left-1/2 z-0 block size-50 -translate-x-1/2 opacity-0 blur-[80px] transition-all group-hover:-translate-y-1/2 group-hover:opacity-40`}
       />
 
       <ShapeTag shape={shape} />
