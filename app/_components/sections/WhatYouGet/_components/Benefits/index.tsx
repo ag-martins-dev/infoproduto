@@ -1,9 +1,9 @@
-import { benefits } from "@/app/_constants/benefits";
+import { features } from "@/app/_constants/features";
 
 export const Benefits = () => {
   return (
     <div className="z-1 grid grid-cols-1 gap-6 select-none md:grid-cols-2">
-      {benefits.map(({ id, title, subtitle, icon: Icon }) => (
+      {features.map(({ id, title, description, icon: Icon }) => (
         <div
           key={id}
           className="group flex flex-col gap-6 rounded-3xl bg-zinc-900/65 p-8 ring ring-zinc-700 backdrop-blur-md transition-all ease-in-out hover:-translate-y-2 hover:shadow-xl hover:ring-rose-500/80"
@@ -17,7 +17,7 @@ export const Benefits = () => {
               {title}
             </b>
             <span className="text-left text-xs/relaxed text-zinc-500 md:text-sm/relaxed">
-              {subtitle}
+              {description}
             </span>
           </div>
         </div>

@@ -5,39 +5,39 @@ import {
   LucideIcon,
   SmartphoneIcon,
 } from "lucide-react";
-import { ElementType } from "react";
 
-type Benefit = {
+export type Feature = {
   id: number;
   title: string;
-  subtitle: string;
-  icon: ElementType & LucideIcon;
+  description: string;
+  icon: LucideIcon;
 };
 
-export const benefits: Benefit[] = [
+export const features: Feature[] = [
   {
     id: 1,
     title: "4 fichas de treino por shape (A/B/C)",
-    subtitle: "Organização completa para sua semana, sem precisar improvisar",
+    description:
+      "Organização completa para sua semana, sem precisar improvisar",
     icon: FileTextIcon,
   },
   {
     id: 2,
     title: "Exercícios com séries e repetições",
-    subtitle: "Tudo pronto para seguir na academia, sem dúvida nenhuma.",
+    description: "Tudo pronto para seguir na academia, sem dúvida nenhuma.",
     icon: DumbbellIcon,
   },
   {
     id: 3,
     title: "Treino com foco no shape",
-    subtitle:
+    description:
       "Sem negligenciar o resto do corpo — equilíbrio e resultado juntos.",
     icon: GoalIcon,
   },
   {
     id: 4,
     title: "PDF leve",
-    subtitle: "Abre instantaneamente no celular — sem app, sem cadastro.",
+    description: "Abre instantaneamente no celular — sem app, sem cadastro.",
     icon: SmartphoneIcon,
   },
 ];
