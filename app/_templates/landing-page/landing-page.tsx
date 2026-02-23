@@ -1,3 +1,5 @@
+import { Header } from "@/app/_components/common/header";
+
 import { FeatureListSection } from "./sections/feature-list-section";
 import { HeroSection } from "./sections/hero-section";
 import { PricingSection } from "./sections/pricing-section/pricing-section";
@@ -7,13 +9,17 @@ import { TestimonialsSection } from "./sections/testimonials-section";
 
 export function LandingPage() {
   return (
-    <main>
-      <HeroSection />
-      <TargetAudienceSection />
-      <ShapeShowcaseSection />
-      <FeatureListSection />
-      <TestimonialsSection />
-      <PricingSection />
-    </main>
+    <>
+      <Header />
+
+      <main>
+        <HeroSection />
+        <TargetAudienceSection />
+        <ShapeShowcaseSection />
+        <FeatureListSection />
+        <TestimonialsSection />
+        <PricingSection />
+      </main>
+    </>
   );
 }

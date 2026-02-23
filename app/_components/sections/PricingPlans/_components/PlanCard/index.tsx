@@ -3,7 +3,7 @@ import { ArrowRight, Check, ShieldCheckIcon } from "lucide-react";
 import { Button as ButtonCTA } from "@/app/_components/common/Button";
 import { getCallToActionKeys } from "@/app/_constants/call-to-action-keys";
 import { planFeatures } from "@/app/_constants/plan-features";
-import { numberToBrl } from "@/app/_utils/covert-number-to-brl";
+import { convertNumberToBRL } from "@/app/_utils/convert-number-to-brl";
 
 export const PlanCard = () => {
   return (
@@ -23,12 +23,12 @@ export const PlanCard = () => {
         <div className="pb-6">
           <div className="flex flex-col items-center justify-center">
             <p className="text-base/relaxed text-zinc-500 line-through">
-              {numberToBrl(47)}
+              {convertNumberToBRL(47)}
             </p>
 
             <div className="flex flex-col items-center justify-center">
               <h5 className="text-6xl/tight font-black text-emerald-500 md:text-7xl/tight">
-                {numberToBrl(14.99)}
+                {convertNumberToBRL(14.99)}
               </h5>
               <p className="text-xs/relaxed text-zinc-500 md:text-sm/relaxed">
                 pagamento único.
@@ -37,7 +37,7 @@ export const PlanCard = () => {
 
             <div className="mt-2 rounded-full bg-emerald-500/10 px-6 py-1 ring ring-emerald-500/20">
               <p className="text-sm/relaxed font-semibold text-emerald-500">
-                Você economiza {numberToBrl(47 - 15)}!
+                Você economiza {convertNumberToBRL(47 - 15)}!
               </p>
             </div>
           </div>

@@ -1,4 +1,4 @@
-type PlanFeature = {
+export type PlanFeature = {
   id: number;
   feature: string;
 };
