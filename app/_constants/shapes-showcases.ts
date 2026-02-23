@@ -41,7 +41,7 @@ export const shapesShowcases: ShapeShowcase[] = [
       relWidth: 200,
       relHeight: 472,
     },
-    color: "blue-500",
+    color: "cyan-500",
     tag: {
       label: "Slim",
       description: "Foco em definição",
@@ -69,7 +69,7 @@ export const shapesShowcases: ShapeShowcase[] = [
       relWidth: 200,
       relHeight: 448,
     },
-    color: "rose-500",
+    color: "red-500",
     tag: {
       label: "Equilibrado",
       description: "Foco em performance",

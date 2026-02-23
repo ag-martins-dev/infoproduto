@@ -1,4 +1,5 @@
 import { LucideIcon } from "lucide-react";
+import { memo } from "react";
 
 type FeatureProps = {
   title: string;
@@ -6,7 +7,11 @@ type FeatureProps = {
   icon: LucideIcon;
 };
 
-export function FeatureCard({ title, description, icon: Icon }: FeatureProps) {
+export const FeatureCard = memo(function FeatureCard({
+  title,
+  description,
+  icon: Icon,
+}: FeatureProps) {
   return (
     <div className="group flex flex-col gap-8 rounded-3xl bg-zinc-900/60 p-8 ring ring-zinc-700 transition-all ease-in-out hover:-translate-y-2 hover:shadow-xl hover:ring-rose-500/65">
       <div className="size-fit rounded-xl bg-rose-500/5 p-4 ring ring-rose-900/60 transition-all ease-in-out group-hover:bg-rose-500/10 group-hover:ring-rose-900/80">
@@ -21,4 +26,4 @@ export function FeatureCard({ title, description, icon: Icon }: FeatureProps) {
       </div>
     </div>
   );
-}
+});

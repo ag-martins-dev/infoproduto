@@ -21,7 +21,7 @@ export default function Countdown() {
 
   useEffect(() => {
     const deadline = TWENTY_HOURS_AHEAD;
-    let intervalId: ReturnType<typeof setInterval>;
+    let animationId: number;
 
     const updateTimer = () => {
       const hoursDifference = deadline - Date.now();
@@ -43,13 +43,12 @@ export default function Countdown() {
         seconds: totalSeconds % 60,
       });
 
-      const delay = 100 - (Date.now() % 1000);
-      intervalId = setInterval(updateTimer, delay);
+      animationId = requestAnimationFrame(updateTimer);
     };
 
     updateTimer();
 
-    return () => clearInterval(intervalId);
+    return () => cancelAnimationFrame(animationId);
   }, []);
 
   return (

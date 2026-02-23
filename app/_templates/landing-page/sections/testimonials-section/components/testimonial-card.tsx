@@ -1,3 +1,5 @@
+import { memo, useMemo } from "react";
+
 import { StarsRating } from "./stars-rating";
 
 type TestimonialCardProps = {
@@ -6,15 +8,15 @@ type TestimonialCardProps = {
   message: string;
 };
 
-export function TestimonialCard({
+export const TestimonialCard = memo(function TestimonialCard({
   author,
   about,
   message,
 }: TestimonialCardProps) {
-  const testimonialProfile = author.split("")[0];
+  const testimonialProfile = useMemo(() => author.split("")[0], [author]);
 
   return (
-    <article className="flex h-64 w-full flex-col justify-between divide-y divide-zinc-200 rounded-3xl bg-white p-5 ring ring-zinc-200 transition-all ease-in-out select-none hover:scale-105 hover:shadow-xl hover:ring-rose-500 md:last-of-type:col-span-2 lg:last-of-type:col-span-1">
+    <article className="flex h-64 w-full flex-col justify-between divide-y divide-zinc-200 rounded-3xl bg-white p-5 ring ring-zinc-200 transition-all ease-in-out will-change-transform select-none hover:scale-105 hover:shadow-xl hover:ring-rose-500 md:last-of-type:col-span-2 lg:last-of-type:col-span-1">
       <div className="flex items-center justify-between gap-3 pb-3">
         <div className="flex items-center gap-3">
           <div className="flex size-10 items-center justify-center rounded-full bg-zinc-500 text-lg font-bold text-white">
@@ -38,4 +40,4 @@ export function TestimonialCard({
       <q className="text-base/relaxed text-zinc-500">{message}</q>
     </article>
   );
-}
+});

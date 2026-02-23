@@ -1,6 +1,6 @@
 import { targetAudiences } from "@/app/_constants/target-audiences";
 
-import { TargetAudience } from "./components/target-audience";
+import { TargetAudienceItem } from "./components/target-audience";
 
 export function TargetAudienceSection() {
   return (
@@ -18,7 +18,7 @@ export function TargetAudienceSection() {
 
       <ul className="grid w-full grid-cols-1 gap-4 md:w-9/12 md:grid-cols-2">
         {targetAudiences.map((targetAudience) => (
-          <TargetAudience
+          <TargetAudienceItem
             key={targetAudience.id}
             targetAudience={targetAudience}
             icon={targetAudience.icon}

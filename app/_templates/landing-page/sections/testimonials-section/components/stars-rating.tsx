@@ -1,10 +1,13 @@
 import { Star } from "lucide-react";
+import { memo } from "react";
 
 type StarsRatingProps = {
   starsCount?: number;
 };
 
-export function StarsRating({ starsCount = 5 }: StarsRatingProps) {
+export const StarsRating = memo(function StarsRating({
+  starsCount = 5,
+}: StarsRatingProps) {
   return (
     <div className="flex items-center gap-1">
       {Array.from({ length: starsCount }).map((_item, index) => (
@@ -12,4 +15,4 @@ export function StarsRating({ starsCount = 5 }: StarsRatingProps) {
       ))}
     </div>
   );
-}
+});

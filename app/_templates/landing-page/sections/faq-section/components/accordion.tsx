@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 import { ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { memo, useCallback, useState } from "react";
 import { twMerge } from "tw-merge";
 
 import { FAQ } from "@/app/_constants/faq";
@@ -11,12 +11,12 @@ type AccordionProps = {
   faq: FAQ;
 };
 
-export function Accordion({ faq }: AccordionProps) {
+export const Accordion = memo(({ faq }: AccordionProps) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
-  const toggleCollapse = () => {
+  const toggleCollapse = useCallback(() => {
     setIsCollapsed((prev) => !prev);
-  };
+  }, []);
 
   return (
     <article
@@ -56,10 +56,13 @@ export function Accordion({ faq }: AccordionProps) {
       </button>
 
       <div
-        className={clsx("grid transition-all duration-400 ease-in-out", {
-          "grid-rows-[1fr] opacity-100": isCollapsed,
-          "grid-rows-[0fr] opacity-0": !isCollapsed,
-        })}
+        className={clsx(
+          "grid transition-all duration-400 ease-in-out will-change-[grid-template-rows,opacity]",
+          {
+            "grid-rows-[1fr] opacity-100": isCollapsed,
+            "grid-rows-[0fr] opacity-0": !isCollapsed,
+          },
+        )}
       >
         <div className="overflow-hidden">
           <p className="pt-2 text-sm/relaxed text-zinc-500">{faq.answer}</p>
@@ -67,4 +70,5 @@ export function Accordion({ faq }: AccordionProps) {
       </div>
     </article>
   );
-}
+});
+Accordion.displayName = "Accordion";
