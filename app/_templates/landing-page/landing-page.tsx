@@ -1,5 +1,6 @@
 import { Header } from "@/app/_components/common/header";
 
+import { FaqSection } from "./sections/faq-section";
 import { FeatureListSection } from "./sections/feature-list-section";
 import { HeroSection } from "./sections/hero-section";
 import { PricingSection } from "./sections/pricing-section/pricing-section";
@@ -19,6 +20,7 @@ export function LandingPage() {
         <FeatureListSection />
         <TestimonialsSection />
         <PricingSection />
+        <FaqSection />
       </main>
     </>
   );
